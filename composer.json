@@ -1,0 +1,20 @@
+{
+    "name": "caichuanhai/storage",
+    "description": "caichuanhai storage lib",
+    "type": "library",
+    "require": {
+        "qiniu/php-sdk": "^7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "caichuanhai\\": "src/"
+        }
+      },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "caichuanhai",
+            "email": "caichuanhai123@qq.com"
+        }
+    ]
+}
