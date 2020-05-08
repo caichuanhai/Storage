@@ -7,6 +7,9 @@ namespace caichuanhai;
 class Storage
 {
 
+	private $bucket;
+	private $dirver = null;
+
 	function __construct()
 	{
 		
