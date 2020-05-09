@@ -85,7 +85,7 @@ class Aliyun implements DirverInterface
 		{
 			$this->ossClient->copyObject($oldBucket, $oldName, $newBucket, $newName);
 
-			if(!$retain) return $this->deleteFile($oldName, $oldBucket)
+			if(!$retain) return $this->deleteFile($oldName, $oldBucket);
 
 			return [true, ''];
 		}
