@@ -1,11 +1,11 @@
 <?php
-namespace caichuanhai\Drivers;
+namespace Caichuanhai\Drivers;
 
 use \Qiniu\Auth;
 use \Qiniu\Config;
 use \Qiniu\Storage\UploadManager;
 use \Qiniu\Storage\BucketManager;
-use \caichuanhai\DirverInterface;
+use \Caichuanhai\DirverInterface;
 
 /**
  * 七牛存储类

@@ -1,7 +1,7 @@
 <?php
-namespace caichuanhai;
+namespace Caichuanhai;
 
-use \caichuanhai\DirverInterface;
+use \Caichuanhai\DirverInterface;
 
 /**
  * 存储类
@@ -18,7 +18,7 @@ class Storage
 
 		if(!file_exists($driverFile)) die($driver.'存储驱动文件不存在');
 
-		$class = '\caichuanhai\Drivers\\'.$driver;
+		$class = '\Caichuanhai\Drivers\\'.$driver;
 		$this->driver = new $class($option);
 
 		if(!$this->driver instanceof DirverInterface) die('存储驱动必须实现DirverInterface接口');

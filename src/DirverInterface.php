@@ -1,5 +1,5 @@
 <?php
-namespace caichuanhai;
+namespace Caichuanhai;
 
 interface DirverInterface
 {

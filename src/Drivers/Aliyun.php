@@ -1,9 +1,9 @@
 <?php
-namespace caichuanhai\Drivers;
+namespace Caichuanhai\Drivers;
 
 use \OSS\OssClient;
 use \OSS\Core\OssException;
-use \caichuanhai\DirverInterface;
+use \Caichuanhai\DirverInterface;
 
 /**
  * 阿里云存储类
