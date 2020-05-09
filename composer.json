@@ -3,7 +3,8 @@
     "description": "caichuanhai storage lib",
     "type": "library",
     "require": {
-        "qiniu/php-sdk": "^7.0.0"
+        "qiniu/php-sdk": "^7.0.0",
+        "aliyuncs/oss-sdk-php": "~2.x.x"
     },
     "autoload": {
         "psr-4": {
