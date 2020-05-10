@@ -7,19 +7,13 @@
 
 ## 安装
 1. composer安装
-
 ```shell
 composer require caichuanhai/router
 ```
-
 2. 普通安装
-
 下载源码压缩包：
-
 [https://github.com/caichuanhai/Storage](https://github.com/caichuanhai/Storage)
-
 解压到您项目的目录中，然后在您的项目中引入 autoloader：
-
 ```php
 require 'path_to_sdk/autoload.php'
 ```
@@ -49,7 +43,7 @@ $storage->uploadFile(pathToFile, newName)
 ```
 
 | 参数名 | 必填 | 默认值 | 说明 |
-| ------------ | ------------ |
+|:--------------------:|:---------------------------:|
 | pathToFile | 是 | 无 | 要上传文件全路径，包括文件名 |
 | newName | 否 | 无 | 新文件名，包含后缀，若为空，则用旧文件名 |
 
@@ -64,7 +58,7 @@ $storage->deleteFile(fileName, Bucket)
 ```
 
 | 参数名 | 必填 | 默认值 | 说明 |
-| ------------ | ------------ |
+|:--------------------:|:---------------------------:|
 | fileName | 是 | 无 | 要删除的文件名 |
 | Bucket | 否 | 无 | bucket，若为空，则用`setBucket`方法所设置的bucket |
 
@@ -79,7 +73,7 @@ $storage->batchDeleteFile(fileNames, Bucket)
 ```
 
 | 参数名 | 必填 | 默认值 | 说明 |
-| ------------ | ------------ |
+|:--------------------:|:---------------------------:|
 | fileNames | 是 | 无 | 要删除的文件名数组，以文件名组成的一维数组 |
 | Bucket | 否 | 无 | bucket，若为空，则用`setBucket`方法所设置的bucket |
 
@@ -95,7 +89,7 @@ $storage->moveFile(oldObject, newObject, retain)
 ```
 
 | 参数名 | 必填 | 默认值 | 说明 |
-| ------------ | ------------ |
+|:--------------------:|:---------------------------:|
 | oldObject | 是 | 无 | 源文件，以bucket和文件名组成，以:分隔，[oldBucket]:oldName 若oldBucket为空，则用`setBucket`方法所设置的bucket |
 | newObject | 是 | 无 | 移动或复制后的文件，以bucket和文件名组成，以:分隔，[newBucket]:[newName] 若newBucket为空，则用`setBucket`方法所设置的bucket，若newName为空，则用旧文件名 |
 | retain | 否 | false | 是否保留旧文件，默认false不保留，等同于移动，若保留，则为复制 |
